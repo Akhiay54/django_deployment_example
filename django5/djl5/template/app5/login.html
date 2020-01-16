@@ -2,8 +2,9 @@
 {% extends "app5/base.html" %}
 {% load staticfiles %}
 {% block body_block %}
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 <div class="jumbotron">
-  <h1> please logIN</h1>
+  <h1> please login </h1>
 <form  action="{% url 'app5:user_login' %}" method="post">
   {% csrf_token %}
  <label for="username"></label>
